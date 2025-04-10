@@ -1,0 +1,30 @@
+name: melon-ticket-checker
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:     
+
+jobs:
+  check-ticket:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+
+    steps:
+      - name: Run Melon Ticket Checker
+        id: check
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: 211217
+          schedule-id: 100001
+          seat-id: 1_0
+
+      - name: Notify via Discord
+        if: success()
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d '{"content": "@everyone 예매 가능! 디코 확인!"}' \
+               $DISCORD_WEBHOOK
