@@ -15,7 +15,7 @@ jobs:
         uses: mooyoul/melon-ticket-actions@v1.1.0
         with:
           product-id: 211217
-          schedule-id: 100003
+          schedule-id: 100001
           seat-id: 1_0
           slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
           message: '예매 가능 확인'
