@@ -18,5 +18,5 @@ jobs:
           schedule-id: 100001
           seat-id: 1_0
           slack-incoming-webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          message: '@everyone 예매 가능! 빨리 달려~ 🚀🔥'
+          message: '@everyone 예매 가능! 빨리 달려~ '
 
