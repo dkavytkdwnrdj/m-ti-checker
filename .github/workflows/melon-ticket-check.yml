@@ -18,4 +18,4 @@ jobs:
           schedule-id: 100003        
           seat-id: 1_0                
           slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          message: '예매 가능 확인! NCT DREAM 토요일 회차 🔥'
+          message: '예매 가능 확인'
