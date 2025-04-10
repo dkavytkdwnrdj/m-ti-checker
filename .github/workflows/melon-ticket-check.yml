@@ -17,5 +17,5 @@ jobs:
           product-id: 211217   
           schedule-id: 100001     
           seat-id: 1_0        
-          slack-incoming-webhook-url: https://discord.com/api/webhooks/1359897070672023562/8SdYKMfz3GM4IVQeZ1_RaVTibDYVoHQxXspeS8Y3Ld59m72z22aRz4Z1CXOH6T-CpztQ
+          slack-incoming-webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
           message: '@everyone 🎟️ 5월 24일 NCT DREAM 팬미팅 티켓 열렸습니다! 바로 예매하세요!'
