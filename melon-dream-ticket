@@ -1,4 +1,4 @@
-name: melon-ticket-checker
+name: m-ti-checker
 
 on:
   schedule:
