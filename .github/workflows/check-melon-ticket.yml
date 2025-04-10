@@ -26,5 +26,5 @@ jobs:
         run: |
           curl -H "Content-Type: application/json" \
                -X POST \
-               -d '{"content": "@everyone 🎟️ 예매 가능! 디코 확인!"}' \
+               -d '{"content": "@everyone 예매 가능! 디코 확인!"}' \
                $DISCORD_WEBHOOK
