@@ -1,0 +1,19 @@
+name: Melon Ticket Checker
+
+on:
+  schedule:
+    - cron: '0 0 * * *' 
+  workflow_dispatch: 
+
+jobs:
+  check-ticket:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Melon Ticket Actions
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '211217'
+          schedule-id: '100001'
+          seat-id: '1_0'
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: '예매 시도 중...'
