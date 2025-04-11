@@ -1,7 +1,7 @@
 name: Melon Ticket Checker
 on:
   schedule:
-    - cron: '*/5 * * * *' # 5분마다 실행
+    - cron: '*/5 * * * *' 
 jobs:
   check-tickets:
     runs-on: ubuntu-latest
