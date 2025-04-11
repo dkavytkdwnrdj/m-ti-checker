@@ -2,7 +2,7 @@ name: melon-ticket-checker
 on:
   schedule:
     - cron: '*/5 * * * *'
-  workflow_dispatch:
+  workflow_dispatch: 아 하지말어봐 
 jobs:
   check-tickets:
     runs-on: ubuntu-latest
