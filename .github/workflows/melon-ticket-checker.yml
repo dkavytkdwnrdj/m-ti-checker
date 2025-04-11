@@ -11,6 +11,6 @@ jobs:
         with:
           product-id: 204755
           schedule-id: 100001
-          seat-id: 1_0
+          seat-id: 10000101
           slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
           message: '티켓이 판매 중입니다!'
